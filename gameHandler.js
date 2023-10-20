@@ -3,7 +3,6 @@ const startScreen = document.querySelector('.startScreen');
 const gameArea = document.querySelector('.gameArea');
 const level = document.querySelector('.level');
 
-// loading audio files
 
 let gameStart = new Audio();
 let gameOver = new Audio();
@@ -150,7 +149,6 @@ document.addEventListener('keyup', (e)=>{
 
 
 
-// Touch event listeners for race car movement
 let touchStartX;
 let raceCarStartX;
 
@@ -167,7 +165,6 @@ document.addEventListener("touchmove", function (e) {
         const deltaX = touchX - touchStartX;
         player.x = raceCarStartX + deltaX;
 
-        // Ensure the car stays within the game area
         const road = gameArea.getBoundingClientRect();
         player.x = Math.min(Math.max(player.x, 0), road.width - carElement.offsetWidth);
     }
