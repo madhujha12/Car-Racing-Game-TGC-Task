@@ -101,7 +101,7 @@
 
 
 
-        @media (max-width: 480px) {
+        /* @media (max-width: 480px) {
             .carGame {
                 background-size: cover;
             }
@@ -116,11 +116,7 @@
                 background: #2d3436;
             }
 
-            /* .score {
-                left: 5px;
-                width: 50px;
-                font-size: 1em;
-            } */
+            
 
             .score {
                 left: 150px;
@@ -129,9 +125,39 @@
                 z-index: 1;
             }
         }
+ */
 
 
-        
+        @media (max-width: 480px) {
+            .carGame {
+                background-size: cover;
+            }
+
+            .startScreen {
+                width: 200px;
+            }
+
+            .gameArea {
+                width: 100%; /* Use 100% width */
+                max-width: 100%; /* Set maximum width to prevent overflow */
+                margin: 0; /* Remove margin to prevent overflow */
+                height: 100vh;
+                background: #2d3436;
+            }
+
+            .score {
+                left: 150px;
+                width: 100px;
+                font-size: 1em;
+                z-index: 1;
+            }
+
+            body {
+                overflow-x: hidden; /* Hide horizontal scrollbar */
+            }
+        }
+
+                
     
 
         
