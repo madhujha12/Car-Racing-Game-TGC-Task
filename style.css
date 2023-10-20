@@ -24,7 +24,7 @@
             height: 100px;
             position: absolute;
             background: white;
-            margin-left: 195px;   /* show line in center = (gameArea.width / 2) - (roadLines.width / 2) */
+            margin-left: 195px;   
         }
         .gameArea{
             width: 400px;
@@ -82,26 +82,9 @@
         }
         
 
-        /* Media Query for Mobile Devices */
-        /* @media (max-width: 480px) {
-            .carGame {
-                background-size: cover;
-            }
-            
-            .gameArea {
-                width: 100%;
-            }
-
-            .score {
-                left: 5px;
-                width: 50px;
-                font-size: 1em;
-            }
-        } */
 
 
-
-        /* @media (max-width: 480px) {
+        @media (max-width: 480px) {
             .carGame {
                 background-size: cover;
             }
@@ -125,39 +108,9 @@
                 z-index: 1;
             }
         }
- */
 
 
-        @media (max-width: 480px) {
-            .carGame {
-                background-size: cover;
-            }
-
-            .startScreen {
-                width: 200px;
-            }
-
-            .gameArea {
-                width: 100%; /* Use 100% width */
-                max-width: 100%; /* Set maximum width to prevent overflow */
-                margin: 0; /* Remove margin to prevent overflow */
-                height: 100vh;
-                background: #2d3436;
-            }
-
-            .score {
-                left: 150px;
-                width: 100px;
-                font-size: 1em;
-                z-index: 1;
-            }
-
-            body {
-                overflow-x: hidden; /* Hide horizontal scrollbar */
-            }
-        }
-
-                
+        
     
 
         
